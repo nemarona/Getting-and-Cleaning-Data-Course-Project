@@ -6,10 +6,8 @@ This README.md file explains how the "run_analysis.R" script works.
 Preliminaries
 -------------
 
-The script first sets the working directory and checks whether the file "dataset.zip" exists.
-If the file does not exist, it is downloaded from the web.
-Then the script checks whether the zip file has been unzipped.
-If it hasn't, it unzips it, extracting all files.
+The script assumes that the zip file with the data sits in the current working directory
+and that it has been fully unzipped, extracting all files.
 
 "UCI HAR Dataset" is set as the new working directory.
 
