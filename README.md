@@ -42,7 +42,7 @@ The single column in each of these data frames is given the name "activity".
 The actual data sets are then read into R as two data frames, `data.train` and `data.test`.
 Only `nrows.train` and `nrows.test` rows are read from each file.
 The option `col.names = varnames` is passed to the `read.table()` function to assing column names according to the "features.txt" file.
-Since R considers parentheses, dashes, and others to be invalid characters to be used for column names in a data frame,
+Since R considers parentheses, dashes, and others to be invalid characters for column names in a data frame,
 these get automatically replaced by dots; e.g., `tBodyAcc-mean()-X` gets replaced by `tBodyAcc.mean...X`.
 We have made no attempt to fix this.
 
@@ -50,7 +50,7 @@ The script then calls the `bind_cols()` function from the `dplyr` package
 to insert subject IDs and activity codes as the new first and second columns of the `data.train` and `data.test` data frames.
 
 A call to the `bind_rows()` function from the `dplyr` package
-merges the two data frames into one, called simply `data`, containing `nrwos.train + nrows.test`
+merges the two data frames into one, called simply `data`, containing `nrows.train + nrows.test`
 (which equals 10299 when the full data set is loaded into R) observations of 563 variables.
 
 The instructions require that activities are identified by their names, not their numbers.
