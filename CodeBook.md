@@ -14,6 +14,7 @@ There are two sets of data:
 Those two files are really one big dataset with 10299 observations.
 
 The names of the variables are given in the file "features.txt" (561 rows, two columns).
+Values are normalized (and hence dimensionless, i.e., without units) and bounded within [-1, +1].
 
 Each observation (or row) corresponds to a particular subject performing a particular activity.
 The list of subjects is given in the files
